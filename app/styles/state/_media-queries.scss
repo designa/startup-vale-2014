@@ -1,0 +1,116 @@
+@media (min-width: 1200px) {
+  .slogan {
+    font-size: 100px;
+    padding-left: 25px;
+  }
+
+  .slogan span {
+    line-height: 92px;
+  }
+
+  .slogan .location {
+    font-size: 38px;
+    padding-top: 21px;
+  }
+
+  .logo, .slogan {
+    height: 420px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 979px) {
+  .slogan {
+    font-size: 34px;
+    border: none;
+    padding: 0;
+    text-align: center;
+    height: auto;
+  }
+
+  .slogan span {
+    display: inline;
+    line-height: 34px;
+  }
+
+  .slogan .motto {
+    display: block;
+  }
+
+  .slogan .location {
+    margin-top: 30px;
+    font-size: 24px;
+  }
+
+  .logo {
+    height: 220px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 767px) {
+  body {
+    padding: 0;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .slogan {
+    font-size: 28px;
+  }
+
+  .slogan span {
+    line-height: 28px;
+  }
+
+  .slogan .location {
+    margin-top: 25px;
+    font-size: 22px;
+  }
+}
+
+
+
+
+
+
+@media (max-width: 490px) {
+  .logo {
+    height: 150px;
+  }
+
+  .slogan {
+    font-size: 36px;
+  }
+
+  .slogan span {
+    line-height: normal;
+  }
+
+  .slogan .location {
+    font-size: 21px;
+  }
+}

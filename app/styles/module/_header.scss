@@ -1,0 +1,54 @@
+.main-header {
+  padding-top: 60px;
+
+  .button-fb:hover {
+    @include box-shadow( 0 4px 6px rgba(0, 0, 0, .5) );
+  }
+}
+
+.slogan {
+  font-family: $base-font-futura;
+  border-left: 10px solid $green-dark;
+  padding-left: 20px;
+  font-size: 90px;
+}
+
+.slogan span {
+  display: block;
+  line-height: 80px;
+}
+
+.slogan .motto {
+  color: $green-dark;
+  margin: 28px 0;
+}
+
+.slogan .location {
+  font-size: 24px;
+}
+
+.logo {
+  @extend %image-replacement;
+  margin: 0;
+  padding: 0;
+  background: url("/images/logo-startup-vale.png") no-repeat center;
+  background-size: contain;
+}
+
+.logo, .slogan {
+  height: 355px;
+}
+
+.first-call {
+  @extend .is-shadow;
+  font-family: $base-font-futura;
+  font-size: 3em;
+  margin-top: 2em;
+  text-align: center;
+}
+
+.fan-page {
+  margin-top: 2.4em;
+  text-align: center;
+}
+
