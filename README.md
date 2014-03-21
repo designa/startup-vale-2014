@@ -8,7 +8,7 @@ Em conjunto com o **generator** [Web App](https://github.com/yeoman/generator-we
 
 ---
 
-OBS: Tivemos que voltar a versão do pacote [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) para versão [0.4.1](https://github.com/gruntjs/grunt-contrib-imagemin/issues)
+OBS: Tivemos que alterar o pacote [grunt-contrib-imagemin](https://github.com/gruntjs/grunt-contrib-imagemin) para versão [0.4.1](https://github.com/gruntjs/grunt-contrib-imagemin/issues)
 
 ---
 
