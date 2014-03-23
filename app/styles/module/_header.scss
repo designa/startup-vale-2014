@@ -1,8 +1,12 @@
 .main-header {
   padding-top: 60px;
 
-  .button-fb:hover {
-    @include box-shadow( 0 4px 6px rgba(0, 0, 0, .5) );
+  .button-2013, .button-fb {
+    @include box-shadow( 0 1px 0 rgba(0, 0, 0, .5) );
+
+    &:hover {
+      @include box-shadow( 0 4px 6px rgba(0, 0, 0, .5) );
+    }
   }
 }
 
@@ -47,7 +51,7 @@
   text-align: center;
 }
 
-.fan-page {
+.link-2013, .fan-page {
   margin-top: 2.4em;
   text-align: center;
 }
