@@ -1,21 +1,24 @@
 @media (min-width: 1200px) {
   .slogan {
-    font-size: 100px;
+    font-size: 90px;
     padding-left: 25px;
   }
 
   .slogan span {
-    line-height: 92px;
+    line-height: 24px;
   }
 
   .slogan .location {
-    font-size: 38px;
-    padding-top: 21px;
+    font-size: 34px;
   }
 
-  .logo, .slogan {
-    height: 420px;
-  }
+.logo {
+  height: 200px;
+}
+
+.slogan {
+  height: 300px;
+}
 }
 
 
@@ -31,30 +34,24 @@
 
 @media (max-width: 979px) {
   .slogan {
-    font-size: 34px;
+    font-size: 62px;
     border: none;
     padding: 0;
     text-align: center;
     height: auto;
   }
 
-  .slogan span {
-    display: inline;
-    line-height: 34px;
-  }
-
-  .slogan .motto {
-    display: block;
-  }
-
   .slogan .location {
-    margin-top: 30px;
+    margin-top: 60px;
     font-size: 24px;
   }
 
+  .button-action {
+    margin-top: 35px;
+  }
+
   .logo {
-    height: 220px;
-    margin-bottom: 20px;
+    height: 200px;
   }
 }
 
@@ -78,18 +75,6 @@
     padding: 20px;
   }
 
-  .slogan {
-    font-size: 28px;
-  }
-
-  .slogan span {
-    line-height: 28px;
-  }
-
-  .slogan .location {
-    margin-top: 25px;
-    font-size: 22px;
-  }
 }
 
 
@@ -98,6 +83,15 @@
 
 
 @media (max-width: 490px) {
+  body {
+    background: $green url(../images/moon-small.png) no-repeat center 510px;
+      height: 700px;
+  }
+
+  .main-header {
+    padding-top: 60px;
+  }
+
   .logo {
     height: 150px;
   }
@@ -111,6 +105,14 @@
   }
 
   .slogan .location {
-    font-size: 21px;
+    font-size: 18px;
+    margin-top: 40px;
+  }
+
+  .button-action {
+    font-size: 18px;
+    width: 250px;
+    height: 50px;
+    padding-top: 18px;
   }
 }

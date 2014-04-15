@@ -1,8 +1,10 @@
 body {
-  @include linear-gradient($green, $green-dark);
+  // @include linear-gradient($green, $green-dark);
+  background: $green url(../images/moon.png) no-repeat center 380px;
   color: $white;
-  font-family: $base-font-family;
+  font-family: $base-font-light;
   font-size: $base-font-size;
   line-height: 1.5em;
   padding-bottom: 60px;
+  height: 920px;
 }
