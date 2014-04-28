@@ -1,10 +1,31 @@
+html, body {
+  height: 100%;
+}
+
 body {
   // @include linear-gradient($green, $green-dark);
-  background: $green url(../images/moon.png) no-repeat center 380px;
+  background: $green;
   color: $white;
   font-family: $base-font-light;
   font-size: $base-font-size;
   line-height: 1.5em;
   padding-bottom: 60px;
-  height: 920px;
+}
+
+h1, h2 {
+  color: #464b4c;
+  font-size: 40px;
+  font-weight: bold;
+}
+h1 {
+  text-transform: uppercase;
+  font-family: 'brandon_grotesqueblack';
+}
+h2, span, p {
+  color: #464b4c;
+  font-family: 'brandon_grotesquelight';
+}
+
+section {
+  width: 100%;
 }
