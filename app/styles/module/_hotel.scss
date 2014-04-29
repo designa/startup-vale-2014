@@ -1,0 +1,66 @@
+.hotel {
+  background: url("/images/bg_hotel.jpg");
+  background-size: cover;
+  text-align: center;
+  padding: 40px 0;
+
+  .location-icon {
+    position: relative;
+    display: inline-block;
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: -2.25px;
+      bottom: -3px;
+      width: 26px;
+      height: 7px;
+      background: rgba(0,0,0,0.3);
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .img-hotel {
+    max-width: 500px;
+    width: 60%;
+  }
+
+  h1, h2 {
+    margin: 30px 0;
+    color: #fff;
+  }
+
+  h1 {
+    font-size: 25px;
+  }
+
+  h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .links {
+    float: none;
+    margin: 0 auto;
+
+    .site-do-hotel, .veja-g-maps {
+      color: #fff;
+      font-size: 20px;
+      margin: 10px 0;
+      display: inline-block;
+      padding-bottom: 1px;
+      text-transform: lowercase;
+      border-bottom: solid 1px transparent;
+      &:hover {
+        border-color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}

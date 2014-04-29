@@ -1,3 +1,7 @@
+.main-header {
+  padding-top: 50px;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -12,6 +16,14 @@
   }
 }
 
+.logo {
+  text-align: center;
+  padding: 25px 0;
+  img {
+    width: 10%;
+  }
+}
+
 .slogan {
   text-align: center;
   font-size: 72px;
@@ -20,271 +32,92 @@
 .slogan .motto {
   font-family: $base-font-black;
   color: $white;
+  position: relative;
+  z-index: 2;
+}
+
+.moon-and-astronaut {
+  text-align: center;
+  position: relative;
+  .moon {
+    width: 50%;
+    margin-top: 40px;
+    -webkit-animation: moon_rotate 60s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
+    animation: moon_rotate 60s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
+  }
+
+  .astronaut {
+    position: absolute;
+    right: 15%;
+    bottom: 10%;
+    width: 26%;
+    -webkit-animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
+    animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
+  }
+}
+
+@-webkit-keyframes moon_rotate { 
+  0% { -webkit-transform: rotate(0deg)} 
+  25% { -webkit-transform: rotate(30deg)} 
+  50% { -webkit-transform: rotate(15deg)} 
+  75% { -webkit-transform: rotate(-30deg)} 
+  100% { -webkit-transform: rotate(0deg)} 
+}
+
+@-webkit-keyframes moon_up_down { 
+  0% { bottom: 10%;} 
+  25% { bottom: 15%;} 
+  50% { bottom: 20%;} 
+  75% { bottom: 15%;} 
+  100% { bottom: 10%;} 
+}
+
+@-webkit-keyframes moon_left_right { 
+  0% { right: 0.5%;} 
+  25% { right: 0.75%;} 
+  50% { right: 1%;} 
+  75% { right: 0.75%;} 
+  100% { right: 0.5%;} 
+}
+
+@-webkit-keyframes astronaut_rotate { 
+  0% { -webkit-transform: rotate(0deg)} 
+  25% { -webkit-transform: rotate(30deg)} 
+  50% { -webkit-transform: rotate(15deg)} 
+  75% { -webkit-transform: rotate(-30deg)} 
+  100% { -webkit-transform: rotate(0deg)} 
+}
+
+@-webkit-keyframes astronaut_up_down { 
+  0% { bottom: 10%;} 
+  25% { bottom: 15%;} 
+  50% { bottom: 20%;} 
+  75% { bottom: 15%;} 
+  100% { bottom: 10%;} 
+}
+
+@-webkit-keyframes astronaut_left_right { 
+  0% { right: 15%;} 
+  25% { right: 16%;} 
+  50% { right: 17%;} 
+  75% { right: 16%;} 
+  100% { right: 15%;} 
 }
 
 .date-and-location {
   background: #80af2f;
   margin-top: 50px;
-  padding: 20px 0;
+  padding: 10px 0;
   .date, .location {
     text-align: center;
     line-height: 25px;
     font-size: 25px;
-    padding: 20px 0;
+    padding: 10px 0;
 
     p {
       color: #fff;
       margin: 0;
     }
-  }
-}
-
-.carousel {
-  background: url("/images/mosaico.png");
-  background-size: cover;
-  text-align: center;
-  padding: 50px 0;
-  a {
-    border-radius: 5px;
-    width: 320px;
-    padding: 30px 0;
-    background: $green;
-    font-size: 25px;
-    color: #fff;
-    display: inline-block;
-    &:hover {
-      text-decoration: none;
-      background: darken($green, 5%);
-    }
-    &:active {
-      background: darken($green, 10%);
-    }
-  }
-}
-
-.panelist {
-  padding: 50px 0;
-  background: #f7eddc;
-  text-align: center;
-  border-bottom: solid 1px darken(#f7eddc, 10%);
-
-  p {
-    font-size: 25px;
-    color: #464b4c;
-    text-transform: lowercase;
-  }
-
-  .panelist-description {
-    margin: 50px 0;
-    text-align: left;
-
-    h2, span {
-      display: inline-block;
-    }
-
-    span {
-      padding-bottom: 1px;
-      border-bottom: solid 1px #464b4c;
-      font-size: 20px;
-      margin-left: 20px;
-    }
-
-    p {
-      text-transform: none;
-      font-size: 16px;
-      line-height: 20px;
-    }
-
-    img {
-      width: 100%;
-    }
-  }
-}
-
-.programming {
-  background: #fff;
-  padding: 25px 0;
-  text-align: center;
-
-  p {
-    font-size: 25px;
-    color: #464b4c;
-    text-transform: lowercase;
-  }
-
-  .centralize {
-    float: none;
-    margin: 50px auto;
-  }
-
-  .time-and-description {
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    
-    .programming-time, .programming-description {
-      display: inline-block;
-      width: 46%;
-
-      p {
-        text-transform: none;
-        font-size: 18px;
-        line-height: 20px;
-      }
-    }
-
-    .programming-time {
-      padding-right: 4%;
-      text-align: right;
-      @include vertical-align;
-
-      span {
-        font-family: 'brandon_grotesqueblack';
-        font-size: 18px;
-      }
-    }
-
-    .programming-description {
-      text-align: left;
-      padding-left: 4%;
-      margin-left: 4%;
-      border-left: solid 5px #ccc;
-      position: relative;
-      .marker {
-        content: "";
-        position: absolute;
-        left: -10px;
-        top: 50%;
-        margin-top: -7px;
-        width: 14px;
-        height: 14px;
-        border-radius: 50%;
-        background: #eee;
-        box-shadow: 0 2px rgba(0,0,0,0.3);
-      }
-    }
-  }
-}
-
-.hotel {
-  background: url("/images/bg_hotel.jpg");
-  background-size: cover;
-  text-align: center;
-  padding: 40px 0;
-
-  .location-icon {
-    position: relative;
-    display: inline-block;
-
-    &:after {
-      content: "";
-      position: absolute;
-      left: -2.25px;
-      bottom: -3px;
-      width: 26px;
-      height: 7px;
-      background: rgba(0,0,0,0.3);
-      border-radius: 50%;
-      z-index: 1;
-    }
-
-    img {
-      position: relative;
-      z-index: 2;
-    }
-  }
-
-  .img-hotel {
-    max-width: 500px;
-    width: 60%;
-  }
-
-  h1, h2 {
-    margin: 30px 0;
-    color: #fff;
-  }
-
-  h1 {
-    font-size: 25px;
-  }
-
-  h2 {
-    font-weight: 400;
-    text-transform: uppercase;
-  }
-
-  .links {
-    float: none;
-    margin: 0 auto;
-
-    .site-do-hotel, .veja-g-maps {
-      color: #fff;
-      font-size: 20px;
-      margin: 10px 0;
-      display: inline-block;
-      padding-bottom: 1px;
-      text-transform: lowercase;
-      border-bottom: solid 1px transparent;
-      &:hover {
-        border-color: #fff;
-        text-decoration: none;
-      }
-    }
-  }
-}
-
-.sponsors-support-and-realization {
-  background: #fff;
-  padding: 40px 0;
-
-  h1 {
-    font-family: 'brandon_grotesquelight';
-    font-size: 25px;
-    text-align: right;
-  }
-
-  .sponsors, .support, .realization {
-    display: table;
-
-    .header {
-      display: table-cell;
-      vertical-align: middle;
-      float: none;
-    }
-
-    .sponsors-imgs, .support-imgs, .realization-imgs {
-      padding: 25px 0;
-      width: auto;
-    }
-  }
-
-  .support {
-    .support-imgs {
-      border-top: solid 1px #ddd;
-      border-bottom: solid 1px #ddd;
-    }
-  }
-}
-
-footer {
-  background: #ddd;
-  padding: 50px 0;
-  text-align: center;
-  p {
-    font-size: 16px;
-    font-weight: bold;
-    margin: 0;
-  }
-}
-
-.logo {
-  text-align: center;
-  img {
-    @extend %image-replacement;
-    margin: 0;
-    padding: 0;
   }
 }
 

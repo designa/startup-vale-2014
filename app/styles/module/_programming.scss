@@ -1,0 +1,68 @@
+.programming {
+  background: #fff;
+  padding: 25px 0;
+  text-align: center;
+
+  p {
+    font-size: 25px;
+    color: #464b4c;
+    text-transform: lowercase;
+  }
+
+  .centralize {
+    float: none;
+    margin: 50px auto;
+  }
+
+  .time-and-description {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .programming-time, .programming-description {
+      display: inline-block;
+      width: 46%;
+
+      p {
+        text-transform: none;
+        font-size: 18px;
+        line-height: 20px;
+      }
+    }
+
+    .programming-time {
+      padding-right: 4%;
+      text-align: right;
+      @include vertical-align;
+
+      span {
+        font-family: 'brandon_grotesqueblack';
+        font-size: 18px;
+      }
+    }
+
+    .programming-description {
+      text-align: left;
+      padding-left: 4%;
+      margin-left: 4%;
+      border-left: solid 5px #ccc;
+      position: relative;
+      z-index: 1;
+      .marker {
+        content: "";
+        position: absolute;
+        left: -10px;
+        top: 50%;
+        margin-top: -7px;
+        width: 14px;
+        height: 14px;
+        border-radius: 50%;
+        background: #eee;
+        box-shadow: 0 2px rgba(0,0,0,0.3);
+        z-index: 2;
+      }
+    }
+  }
+}

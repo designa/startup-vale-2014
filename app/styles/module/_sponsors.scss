@@ -1,0 +1,37 @@
+.sponsors-support-and-realization {
+  background: #fff;
+  padding: 40px 0;
+
+  img {
+    max-width: 100%;
+  }
+
+  h1 {
+    font-family: 'brandon_grotesquelight';
+    font-size: 25px;
+    text-align: right;
+  }
+
+  .sponsors, .support, .realization {
+    display: table;
+
+    .header {
+      display: table-cell;
+      vertical-align: middle;
+      float: none;
+      padding-right: 50px;
+    }
+
+    .sponsors-imgs, .support-imgs, .realization-imgs {
+      padding: 25px 0;
+      width: auto;
+    }
+  }
+
+  .support {
+    .support-imgs {
+      border-top: solid 1px #ddd;
+      border-bottom: solid 1px #ddd;
+    }
+  }
+}

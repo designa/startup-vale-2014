@@ -1,0 +1,38 @@
+.panelist {
+  padding: 50px 0;
+  background: #f7eddc;
+  text-align: center;
+  border-bottom: solid 1px darken(#f7eddc, 10%);
+
+  p {
+    font-size: 25px;
+    color: #464b4c;
+    text-transform: lowercase;
+  }
+
+  .panelist-description {
+    margin: 50px 0;
+    text-align: left;
+
+    h2, span {
+      display: inline-block;
+    }
+
+    span {
+      padding-bottom: 1px;
+      border-bottom: solid 1px #464b4c;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+
+    p {
+      text-transform: none;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
