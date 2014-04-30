@@ -31,7 +31,7 @@
 
 .slogan .motto {
   font-family: $base-font-black;
-  color: $white;
+  color: #fff;
   position: relative;
   z-index: 2;
 }
@@ -39,18 +39,28 @@
 .moon-and-astronaut {
   text-align: center;
   position: relative;
+
+  .phrase {
+    width: 75%;
+    position: absolute;
+    top: 30%;
+    left: 12.5%;
+    z-index: 2;
+  }
+
   .moon {
     width: 50%;
     margin-top: 40px;
-    -webkit-animation: moon_rotate 60s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
-    animation: moon_rotate 60s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
+    -webkit-animation: moon_rotate 180s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
+    animation: moon_rotate 180s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
   }
 
   .astronaut {
     position: absolute;
     right: 15%;
-    bottom: 10%;
+    bottom: 5%;
     width: 26%;
+    z-index: 3;
     -webkit-animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
     animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
   }
@@ -58,10 +68,10 @@
 
 @-webkit-keyframes moon_rotate { 
   0% { -webkit-transform: rotate(0deg)} 
-  25% { -webkit-transform: rotate(30deg)} 
-  50% { -webkit-transform: rotate(15deg)} 
-  75% { -webkit-transform: rotate(-30deg)} 
-  100% { -webkit-transform: rotate(0deg)} 
+  25% { -webkit-transform: rotate(90deg)} 
+  50% { -webkit-transform: rotate(180deg)} 
+  75% { -webkit-transform: rotate(270deg)} 
+  100% { -webkit-transform: rotate(360deg)} 
 }
 
 @-webkit-keyframes moon_up_down { 
@@ -89,11 +99,11 @@
 }
 
 @-webkit-keyframes astronaut_up_down { 
-  0% { bottom: 10%;} 
-  25% { bottom: 15%;} 
-  50% { bottom: 20%;} 
-  75% { bottom: 15%;} 
-  100% { bottom: 10%;} 
+  0% { bottom: 5%;} 
+  25% { bottom: 10%;} 
+  50% { bottom: 15%;} 
+  75% { bottom: 10%;} 
+  100% { bottom: 5%;} 
 }
 
 @-webkit-keyframes astronaut_left_right { 

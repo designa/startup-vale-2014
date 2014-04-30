@@ -10,6 +10,10 @@
     text-transform: lowercase;
   }
 
+  h1 {
+    margin: 0;
+  }
+
   .panelist-description {
     margin: 50px 0;
     text-align: left;
@@ -31,8 +35,12 @@
       line-height: 20px;
     }
 
-    img {
-      width: 100%;
+    .zoom-img {
+      overflow: hidden;
+      img {
+        @include zoom;
+        width: 100%;
+      }
     }
   }
 }

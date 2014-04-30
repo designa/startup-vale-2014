@@ -99,6 +99,15 @@
       span {
         margin: 0 0 10px 0;
       }
+
+      .zoom-img {
+        img {
+          filter: none;
+          -webkit-filter: grayscale(0);
+          -moz-filter: grayscale(0);
+          -o-filter: grayscale(0);
+        }
+      }
     }
   }
 

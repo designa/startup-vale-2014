@@ -7,16 +7,16 @@
     border-radius: 5px;
     width: 320px;
     padding: 30px 0;
-    background: $green;
+    background: rgba(150,206,56,0.75);
     font-size: 25px;
     color: #fff;
     display: inline-block;
     &:hover {
       text-decoration: none;
-      background: darken($green, 5%);
+      background: darken(rgba(150,206,56,0.75), 5%);
     }
     &:active {
-      background: darken($green, 10%);
+      background: darken(rgba(150,206,56,0.75), 10%);
     }
   }
 }
