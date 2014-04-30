@@ -10,7 +10,7 @@ $(document).ready(function(){
 			if (elementYPosition <= target) {
 				$(".marker").css("background", "#ddd");
 
-	    	$(this).css("background", "black");
+	    	$(this).css("background", "#96ce38");
 			};
 		});
 	});

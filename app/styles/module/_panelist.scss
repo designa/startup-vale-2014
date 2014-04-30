@@ -18,11 +18,13 @@
     margin: 50px 0;
     text-align: left;
 
-    h2, span {
+    h2, a {
       display: inline-block;
     }
 
-    span {
+    a {
+      text-decoration: none;
+      color: #464b4c;
       padding-bottom: 1px;
       border-bottom: solid 1px #464b4c;
       font-size: 20px;
