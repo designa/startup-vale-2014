@@ -40,7 +40,16 @@
       img {
         @include zoom;
         width: 100%;
+        &:hover {
+          -webkit-animation: change_opacity 1s ease;
+          animation: change_opacity 1s ease;
+        }
       }
     }
   }
+}
+
+@-webkit-keyframes change_opacity { 
+  0% { opacity: 0.75;} 
+  100% { opacity: 1;} 
 }
