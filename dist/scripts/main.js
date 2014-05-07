@@ -1,0 +1,1 @@
+$(document).ready(function(){var a=$(window).height()/2;$(window).scroll(function(){$(".marker").each(function(){var b=$(this).offset().top,c=b-$(window).scrollTop();a>=c&&($(".marker").css("background","#ddd"),$(this).css("background","#96ce38"))})})});
