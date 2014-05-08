@@ -1,0 +1,49 @@
+.menu {
+	nav {
+		padding: 15px 0;
+
+		ul {
+			margin: 0;
+			list-style: none;
+			display: inline-block;
+      width: 100%;
+
+			> li {
+				font-weight: bold;
+				font-size: 16px;
+				height: 100%;
+				display: inline-block;
+				width: 125px;
+				text-align: center;
+
+				a {
+					color: #fff;
+				}
+			}
+
+			.rocket {
+				background: darken($green, 10%);
+				border-radius: 50%;
+				width: 70px;
+				padding: 11px 0;
+				display: inline-block;
+
+				img {
+					width: 48px;
+				}
+			}
+
+			.moon {
+				img {
+					position: relative;
+					bottom: -15px;
+				}
+			}
+		}
+
+	}
+
+	.container {
+		padding: 0 !important;
+	}
+}

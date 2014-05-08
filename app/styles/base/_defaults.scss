@@ -5,6 +5,7 @@ html, body {
 body {
   // @include linear-gradient($green, $green-dark);
   background: $green;
+  position: relative;
   color: $white;
   font-family: $base-font-light;
   font-size: $base-font-size;
@@ -28,4 +29,25 @@ h2, span, p {
 
 section {
   width: 100%;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  font-size: 16px;
+  color: #fff;
+  background: darken($green, 10%);
+  padding: 10px 20px;
+  z-index: 9999;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+  &:hover {
+    color: #fff;
+    background: darken($green, 15%);
+    text-decoration: none;
+  }
+  &:active {
+    background: darken($green, 20%);
+  }
 }

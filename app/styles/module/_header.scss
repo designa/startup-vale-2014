@@ -33,7 +33,7 @@
   font-family: $base-font-black;
   color: #fff;
   position: relative;
-  z-index: 2;
+  z-index: 3;
 }
 
 .moon-and-astronaut {
@@ -45,14 +45,23 @@
     position: absolute;
     top: 30%;
     left: 12.5%;
-    z-index: 2;
+    z-index: 3;
   }
 
   .moon {
+    position: relative;
+    z-index: 2;
     width: 50%;
     margin-top: 40px;
     -webkit-animation: moon_rotate 180s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
     animation: moon_rotate 180s infinite ease-out, moon_up_down 15s infinite ease-out, moon_left_right 15s infinite ease-out;
+  }
+
+  .shadow {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: 1;
   }
 
   .astronaut {
@@ -60,7 +69,7 @@
     right: 15%;
     bottom: 5%;
     width: 26%;
-    z-index: 3;
+    z-index: 4;
     -webkit-animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
     animation: astronaut_rotate 60s infinite ease-out, astronaut_up_down 15s infinite ease-out, astronaut_left_right 15s infinite ease-out;
   }

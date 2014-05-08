@@ -44,6 +44,30 @@
   .button-action {
     margin-top: 35px;
   }
+
+  .menu {
+    nav ul {
+      li {
+        font-size: 14px;
+        width: 94px; 
+      }
+
+      .rocket {
+        width: 50px;
+        padding: 8px 0;
+        text-align: center;
+        display: inline-block;
+
+        img {
+          width: 32px;
+        }
+      }
+
+      .moon {
+        width: 96px;
+      }
+    }
+  }
 }
 
 @media (max-width: 767px) {
@@ -59,6 +83,25 @@
     padding: 20px;
   }
 
+  .menu {
+    nav ul {
+      padding-left: 0;
+
+      li {
+        float: left;
+        width: 20%;
+      }
+
+      .rocket {
+        display: none;
+      }
+
+      .moon {
+        display: none;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 490px) {
@@ -70,6 +113,10 @@
   .moon-and-astronaut {
     .moon {
       width: 75%;
+    }
+
+    .shadow {
+      top: 75px;
     }
   }
 
@@ -124,6 +171,26 @@
         float: left;
         width: 100%;
         padding: 0;
+      }
+    }
+  }
+
+  .menu {
+    nav ul {
+      padding-left: 0;
+
+      li {
+        display: block;
+        width: 100%;
+        padding: 15px 0;
+      }
+
+      .rocket {
+        display: none;
+      }
+
+      .moon {
+        display: none;
       }
     }
   }

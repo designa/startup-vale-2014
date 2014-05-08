@@ -14,4 +14,14 @@ $(document).ready(function(){
 			};
 		});
 	});
+
+	$(window).on("scroll", function() {
+    var scroll = $(document).scrollTop();
+    if (scroll > 0) {
+      $(".back-to-top").fadeIn();
+    }
+    else {
+    	$(".back-to-top").fadeOut();	
+    }
+  });
 });
