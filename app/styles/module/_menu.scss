@@ -1,4 +1,6 @@
 .menu {
+	background: $green;
+	z-index: 9999;
 	nav {
 		padding: 15px 0;
 
@@ -46,4 +48,9 @@
 	.container {
 		padding: 0 !important;
 	}
+}
+
+.menu-fixed {
+	position: fixed;
+	top: 0;
 }
