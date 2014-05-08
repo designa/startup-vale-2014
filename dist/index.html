@@ -29,8 +29,9 @@
   <!-- endbuild -->
 </head>
 <body>
+  <a href="#header" class="back-to-top">voltar ao topo</a>
 
-  <header class="main-header">
+  <header class="main-header" id="header">
     <div id="container" class="container">
 
       <div class="row">
@@ -58,6 +59,7 @@
           <div class="moon-and-astronaut">
             <img src="images/frase.png" class="phrase">
             <img src="images/moon.png" class="moon">
+            <img src="images/shadow.png" class="shadow">
             <img src="images/astronaut.png" class="astronaut">
           </div>
         </div>
@@ -95,7 +97,23 @@
         <a href="http://2013.startupvale.com.br" target="_blank">Edição anterior</a>
       </section>
 
-      <section class="panelist">
+      <section class="menu">
+        <div class="row container">
+          <nav>
+            <ul>
+              <li class="rocket"><a href="#"><img src="images/logo-startup-vale.png"></a></li>
+              <li><a href="#panelist">Palestrantes</a></li>
+              <li><a href="#programming">Programação</a></li>
+              <li><a href="#place">Local do evento</a></li>
+              <li><a href="#support">Apoio</a></li>
+              <li><a href="http://www.eventick.com.br/startupvale14" target="_blank">Registre-se</a></li>
+              <li class="moon"><a href="#"><img src="images/moon_menu.png"></a></li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+      <section class="panelist" id="panelist">
         <h1>Palestrantes</h1>
         <p>Venha aprender com esse pessoal</p>
 
@@ -138,7 +156,9 @@
               <a href="http://www.twitter.com/Thiago_Feijao" target="_blank">@Thiago_Feijao</a>
               <p>Founder & CEO do Qmágico, uma startup de Educação que acredita que todos devem ter acesso a uma educação personalizada e de excelência, independente de onde estejam.</p>
             </div>
+          </div>
 
+          <div class="col-md-12">
             <div class="col-md-6 panelist-description">
               <div class="zoom-img">
                 <img src="images/speakers/kadu-potinatti.png">
@@ -160,7 +180,7 @@
         </div>
       </section>
 
-      <section class="programming">
+      <section class="programming" id="programming">
         <h1>Programação</h1>
         <p>Veja só o que vai rolar no evento</p>
 
@@ -211,7 +231,7 @@
         </div>
       </section>
 
-      <section class="hotel">
+      <section class="hotel" id="place">
         <div class="row container">
           <div class="col-md-12">
             <div class="location-icon">
@@ -237,7 +257,7 @@
         </div>
       </section>
 
-      <section class="sponsors-support-and-realization">
+      <section class="sponsors-support-and-realization" id="support">
         <div class="row container">
           <div class="col-md-12 sponsors">
             <div class="col-md-4 header">
