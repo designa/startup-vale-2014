@@ -147,6 +147,20 @@
         margin: 0 0 10px 0;
       }
 
+      h2 {
+        display: block;
+      }
+
+      a {
+        float: left;
+        margin: 0 0 10px 0;
+        width: auto;
+      }
+
+      p {
+        clear: both;
+      }
+
       .zoom-img {
         img {
           filter: none;
@@ -180,9 +194,13 @@
       padding-left: 0;
 
       li {
-        display: block;
+        display: none;
         width: 100%;
         padding: 15px 0;
+      }
+
+      .menu-register {
+        display: block;
       }
 
       .rocket {
